@@ -6,15 +6,19 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "bootstrap": "^4.5.2",
+    "core-js": "^3.6.5",
+    "html-webpack-plugin": "^4.4.1",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "typescript": "^4.0.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "webpack-dev-server  --mode development --inline --hot --open --host",
+    "build": "webpack  --mode production"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +34,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/polyfill": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-plugin-import": "^1.13.0",
+    "mini-css-extract-plugin": "^0.11.0",
+    "webpack-cli": "^3.3.12"
   }
 }
